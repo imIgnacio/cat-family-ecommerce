@@ -1,19 +1,21 @@
 {
-  "name": "cat-family-ecommerce",
-  "version": "1.0.0",
-  "main": "server/server.js",
-  "scripts": {
-    "start": "node server/server.js",
-    "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm install && npm run build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "concurrently": "^7.2.2"
-  }
+	"name": "cat-family-ecommerce",
+	"version": "1.0.0",
+	"main": "server/server.js",
+	"scripts": {
+		"start": "node server/server.js",
+		"dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+		"install": "cd server && npm i && cd ../client && npm i",
+		"seed": "cd server && npm run seed",
+		"build": "cd client && npm install && npm run build",
+		"format": "prettier --write .",
+		"lint": "eslint --fix . --ext .js .jsx"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"concurrently": "^7.2.2"
+	}
 }
